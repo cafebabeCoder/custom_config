@@ -2,12 +2,9 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # 开发机需要
-# source ~/.profile_comm
+source ~/.profile_comm
 alias ls='ls -G'
 alias grep='grep --color'
-
-# autosuggest 的补全快捷键为逗号
-bindkey ',' autosuggest-accept
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -108,20 +105,28 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/luoyu/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/luoyu/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/luoyu/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/luoyu/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/Users/luoyu/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/luoyu/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/luoyu/opt/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/luoyu/opt/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 # <<< conda initialize <<<
 #
 # tmux通过ssh在远端登录时，直接开启tmux
 if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then 
     tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 fi
+
+# 提示的颜色，tmux会修改这个参数， 改回原来的就行了
+export TERM=xterm-256color
+
+# tmux下，这个要放在最后面， 否则补全有问题
+# autosuggest 的补全快捷键为逗号
+bindkey ',' autosuggest-accept
+
