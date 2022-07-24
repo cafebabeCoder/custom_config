@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# 开发机需要
+# source ~/.profile_comm
 alias ls='ls -G'
 alias grep='grep --color'
 
@@ -117,5 +120,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-export PATH="$PATH:$HOME/.ft"
+#
+# tmux通过ssh在远端登录时，直接开启tmux
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then 
+    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+fi
