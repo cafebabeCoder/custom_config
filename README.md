@@ -7,6 +7,6 @@ ln -s /Users/luoyu/.custom_config/.vimrc /Users/luoyu/.vimrc
 
 ln -s /Users/luoyu/.custom_config/.tmux.conf ~/.tmux.con
 
-ln -s /Users/luoyu/.custom_config/.zshrc ~/.zshrc
-
 ln -s ~/.vimrc ~/.ideavimrc
+
+ln -s /home/lorineluo/.custom_config/.zshrc ~/.zshrc
