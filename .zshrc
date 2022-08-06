@@ -130,3 +130,7 @@ export TERM=xterm-256color
 # autosuggest 的补全快捷键为逗号
 bindkey ',' autosuggest-accept
 
+# iterm2 open subl 
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+

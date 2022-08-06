@@ -1,0 +1,38 @@
+matches:
+  - trigger: "/key"
+    replace: "<kbd>$|$</kbd>"
+  
+  - trigger: "/font"
+    replace: "<font color=#F0FFFF size=3>$|$</font>"
+
+  - trigger: "/red"
+    replace: "<font color=#CD5C5C>$|$</font>"
+
+  - trigger: "/callout"
+    replace: "[💡]: "
+
+  - trigger: "/todo"
+    replace: "- [ ] "
+
+  - trigger: "/table"
+    replace: "| left | center | right |\n| :--- | :----: | ----: |\n| aaaa | bbbbbb | ccccc |\n "
+
+  - trigger: "/link"
+    replace: "[$|$]({{clipboard}})"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+
+  - trigger: "/check"
+    replace: "- [ ] "
+
+  - trigger: "/today" 
+    replace: "{{today}}"
+    vars:
+        - name: "today"
+          type: "date"
+          params:
+            format: "%Y/%m/%d"
+
+  - trigger: "->"
+    replace: "→"

@@ -1,0 +1,4 @@
+filter_exec: "Typora"
+
+extra_includes:
+  - "../match/_typora.yml"

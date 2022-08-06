@@ -1,0 +1,23 @@
+matches:
+  - trigger: "/key"
+    replace: "<kbd>$|$</kbd>"
+  
+  - trigger: "/callout"
+    replace: "[💡]: "
+
+  - trigger: "/link"
+    replace: "[$|$]({{clipboard}})"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+
+  - trigger: "/check"
+    replace: "- [ ] "
+
+  - trigger: "/today" 
+    replace: "{{today}}"
+    vars:
+        - name: "today"
+          type: "date"
+          params:
+            format: "%Y/%m/%d"
