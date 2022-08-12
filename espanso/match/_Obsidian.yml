@@ -15,7 +15,7 @@ matches:
     replace: "- [ ] "
 
   - trigger: "/table"
-    replace: "| left | center | right |\n| :--- | :----: | ----: |\n| aaaa | bbbbbb | ccccc |\n "
+    replace: "| left | center | right |\n"
 
   - trigger: "/link"
     replace: "[$|$]({{clipboard}})"
@@ -33,6 +33,13 @@ matches:
           type: "date"
           params:
             format: "%Y/%m/%d"
+  - trigger: "/now" 
+    replace: "{{today}}"
+    vars:
+        - name: "today"
+          type: "date"
+          params:
+            format: "%H:%M  "
 
   - trigger: "->"
     replace: "→"
