@@ -1,12 +1,18 @@
 # custom_config
 各类配置
 
-ln -s /Users/luoyu/.custom_config/.obsidian.vimrc /Users/luoyu/icloud/obsidian/.obsidian.vimrc
+**idea-vim** `ln -s $HOME/.vimrc $HOME/.ideavimrc`
+**vim** `ln -s $HOME/.custom_config/.vimrc $HOME/.vimrc`
+**obsidian-vim** `mac` `ln -s $HOME/.custom_config/.obsidian.vimrc /Users/luoyu/icloud/obsidian/.obsidian.vimrc`
 
-ln -s /Users/luoyu/.custom_config/.vimrc /Users/luoyu/.vimrc
+**tmux** `ln -s $HOME/.custom_config/.tmux.conf $HOME/.tmux.conf `
 
-ln -s /Users/luoyu/.custom_config/.tmux.conf ~/.tmux.con
+**zsh** `ln -s /home/lorineluo/.custom_config/.zshrc ~/.zshrc`
 
-ln -s ~/.vimrc ~/.ideavimrc
+**oh-my-zsh** `ln -s $HOME/.custom_config/oh-my-zsh/theme/ys.zsh-theme $HOME/.oh-my-zsh/custom/themes/ys.zsh-theme`
 
-ln -s /home/lorineluo/.custom_config/.zshrc ~/.zshrc
+**espanso** `ln -s $HOME/.custom_config/espanso $HOME/Library/Application\ Support/espanso`
+
+**pycharm-键盘映射**  `ln -s $HOME/.custom_config/JetBrains/PyCharm2021.2/keymaps/custom.xml $HOME/Library/Application\ Support/JetBrains/PyCharm2021.2/keymaps/custom.xml`
+
+**karabiner** `ln -s $HOME/.custom_config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json`

@@ -16,5 +16,8 @@ unset __conda_setup
 # iterm2 open subl 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+# 配置 typora
+alias typora="open -a typora"
+
 
 
