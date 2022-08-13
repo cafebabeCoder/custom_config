@@ -1,0 +1,27 @@
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/data/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/data/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/data/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/data/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="$PATH:/usr/local/bin:/usr/local/cuda-10.1/bin:/usr/local/TensorRT/bin:/root/node-v14.17.0-linux-x64/bin:$HOME/.ft"
+
+export PYTHONPATH=$PYTHONPATH:"/apdcephfs/private_lorineluo/RecBole"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/.mujoco/mjpro150/bin
+
+#ift
+export PATH="$PATH:$HOME/.ft"
+save_path="./" #接收文件存放的路径
+fuser="lorineluo"
+ft config local . -u $fuser
+alias fts='ft sync -u $fuser -s' 
+alias fta='ft agent -u $fuser -p $save_path'
