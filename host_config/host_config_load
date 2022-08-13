@@ -3,8 +3,8 @@ echo $localhostname
 for file_path in ~/.custom_config/host_config/*
 do
 	file=${file_path##*/}
-	echo $file
 	if [ "$file" = "$localhostname" ];then 
-		`source ${file_path}`
+		echo ${file_path} 
+		source ${file_path}
 	fi
 done

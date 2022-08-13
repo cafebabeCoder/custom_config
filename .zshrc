@@ -108,6 +108,5 @@ export TERM=xterm-256color
 # autosuggest 的补全快捷键为逗号
 bindkey ',' autosuggest-accept
 
-
 # source每台机器独有的配置
-zsh ./host_config/host_config_load
+source ~/.custom_config/host_config/host_config_load
