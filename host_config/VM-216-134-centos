@@ -6,3 +6,11 @@ if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
     tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 fi
 
+# ift
+export PATH="$PATH:$HOME/.ft"
+save_path="./" #接收文件存放的路径
+fuser="lorineluo"
+ft config local . -u $fuser
+alias fta='ft agent -u $fuser -p $save_path'
+alias fts='ft sync -u $fuser -s'
+
