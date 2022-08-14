@@ -43,3 +43,12 @@ matches:
 
   - trigger: "->"
     replace: "→"
+
+  - trigger: "/command"
+    replace: "⌘"
+  - trigger: "/option"
+    replace: "⌥"
+  - trigger: "/shift"
+    replace: "⇧"
+  - trigger: "/control"
+    replace: "⌃"

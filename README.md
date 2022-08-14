@@ -15,4 +15,10 @@
 
 **pycharm-键盘映射**  `ln -s $HOME/.custom_config/JetBrains/PyCharm2021.2/keymaps/custom.xml $HOME/Library/Application\ Support/JetBrains/PyCharm2021.2/keymaps/custom.xml`
 
-**karabiner** `ln -s $HOME/.custom_config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json`
+**karabiner** `ln -s /Users/luoyu/.custom_config/karabiner/complex_modifications.json /Users/luoyu/.config/karabiner/assets/complex_modifications/`
+
+**vscode** `ln -s /Users/luoyu/.custom_config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
+`ln -s /Users/luoyu/.custom_config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json`
+
+> mac 需要加上：
+`ln -s /Users/luoyu/.custom_config/host_config/MacBook-Pro-2.local /Users/luoyu/.bash_profile`

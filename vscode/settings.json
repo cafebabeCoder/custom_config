@@ -1,0 +1,55 @@
+{
+     // 这些文件将不会显示在工作空间中
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "git.ignoreLegacyWarning": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    //  选择高亮
+    "workbench.colorCustomizations": {
+        "editor.selectionHighlightBackground": "#858171"
+    },
+    "terminal.integrated.inheritEnv": false,
+    //关于vim的配置文件
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [],
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.ignoreMissingGitWarning": true,
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh",
+            "args": ["-l"]
+        }
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "files.autoGuessEncoding": true,
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 14,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "workbench.settings.editor": "ui",
+    "zenMode.fullScreen": true,
+    "zenMode.hideTabs": false,
+    "zenMode.hideLineNumbers": false
+}
