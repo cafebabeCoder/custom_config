@@ -110,3 +110,4 @@ bindkey ',' autosuggest-accept
 
 # source每台机器独有的配置
 source ~/.custom_config/host_config/host_config_load
+#export PATH="$PATH:$HOME/.ft"

@@ -11,6 +11,9 @@ matches:
   - trigger: "/callout"
     replace: "[💡]: "
 
+  - trigger: "/po"
+    replace: "🍅"
+
   - trigger: "/todo"
     replace: "- [ ] "
 
