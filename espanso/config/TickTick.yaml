@@ -1,0 +1,4 @@
+filter_exec: "TickTick"
+
+extra_includes:
+  - "../match/_Obsidian.yml"
